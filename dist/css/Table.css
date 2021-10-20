@@ -1,0 +1,32 @@
+.table__contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  color: #000000;
+  margin: auto;
+}
+
+.table__contain__box {
+  background-color: #efefef;
+  border: 1px solid #656677;
+  width: 100vw;
+  margin-bottom: 10rem;
+  padding: 3rem 10rem;
+}
+
+.table__contain__box--th, .table__contain__box--td {
+  padding: 1rem 3rem;
+  border: 1px solid #434cb7;
+}
+
+.table__contain__box--td {
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=Table.css.map */

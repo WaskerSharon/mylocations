@@ -1,0 +1,25 @@
+.table__contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #000000;
+  margin: auto;
+  
+  &__box {
+      background-color: #efefef;
+      border: 1px solid #656677;
+      width: 100vw;
+      margin-bottom: 10rem;
+      padding: 3rem 10rem;
+
+      &--th, &--td {
+        padding: 1rem 3rem;
+        border: 1px solid #434cb7;
+      }
+      &--td {
+          font-size: 1.5rem;
+      }
+  }
+
+}
