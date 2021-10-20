@@ -11,8 +11,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 3rem auto;
 }
 
@@ -32,6 +32,6 @@
   background-color: #3f3e7e;
   color: #ffffff;
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=Header.css.map */

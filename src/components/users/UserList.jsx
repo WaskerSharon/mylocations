@@ -12,7 +12,7 @@ export function UserList() {
   const loading = useSelector((state) => state.loading);
 
   const handleDelete = (id) => {
-    dispatch(userDeleted({ id }));
+    dispatch(userDeleted({id}));
   };
 
   return (
@@ -44,7 +44,7 @@ export function UserList() {
         ) : (
           <table className="table__contain__box">
             <thead>
-              <tr className="table__contain__box--tr">
+              <tr>
                 <th className="table__contain__box--th">ID</th>
                 <th className="table__contain__box--th">Name</th>
                 <th className="table__contain__box--th">Email</th>
@@ -54,14 +54,16 @@ export function UserList() {
             <tbody>
               {entities.length &&
                 entities.map(({ id, name, email }, i) => (
-                  <tr key={i}>
+                  <tr className="table__contain__box--tr" key={i}>
                     <td className="table__contain__box--td">{id}</td>
                     <td className="table__contain__box--td">{name}</td>
                     <td className="table__contain__box--td">{email}</td>
                     <td className="table__contain__box--td">
-                      <button onClick={() => handleDelete(id)}>Delete</button>
+                      <button 
+                        className="button-secondary"
+                        onClick={() => handleDelete(id)}>Delete</button>
                       <Link to={`/edit-user/${id}`}>
-                        <button>Edit</button>
+                        <button className="button-secondary">Edit</button>
                       </Link>
                     </td>
                   </tr>
