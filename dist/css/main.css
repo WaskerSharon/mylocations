@@ -1,0 +1,92 @@
+@use 'mixins';
+@use 'header';
+@use 'table';
+@use 'colors';
+/* css reset */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+figure {
+  margin: 0;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+ul, ol, dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+cite {
+  font-style: normal;
+}
+
+fieldset {
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* end of css reset */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 2rem;
+}
+/*# sourceMappingURL=main.css.map */

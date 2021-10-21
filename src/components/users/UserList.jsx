@@ -2,9 +2,6 @@ import { fetchUsers, userDeleted } from "./usersSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
-import "../../Styles/Header.scss";
-import "../../Styles/Table.scss";
-
 export function UserList() {
   const dispatch = useDispatch();
 
@@ -42,23 +39,23 @@ export function UserList() {
         {loading ? (
           "Loading..."
         ) : (
-          <table className="table__contain__box">
-            <thead>
+          <table className="table__contain__elem">
+            <thead className="table__contain__elem--head">
               <tr>
-                <th className="table__contain__box--th">ID</th>
-                <th className="table__contain__box--th">Name</th>
-                <th className="table__contain__box--th">Email</th>
-                <th className="table__contain__box--th">Actions</th>
+                <th className="table__contain__elem--th">ID</th>
+                <th className="table__contain__elem--th">Name</th>
+                <th className="table__contain__elem--th">Email</th>
+                <th className="table__contain__elem--th">Actions</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className="table__contain__elem--body">
               {entities.length &&
                 entities.map(({ id, name, email }, i) => (
-                  <tr className="table__contain__box--tr" key={i}>
-                    <td className="table__contain__box--td">{id}</td>
-                    <td className="table__contain__box--td">{name}</td>
-                    <td className="table__contain__box--td">{email}</td>
-                    <td className="table__contain__box--td">
+                  <tr className="table__contain__elem--tr" key={i}>
+                    <td data-aria-label="ID" className="table__contain__elem--td">{id}</td>
+                    <td data-aria-label="Name" className="table__contain__elem--td">{name}</td>
+                    <td data-aria-label="Email" className="table__contain__elem--td email--cell">{email}</td>
+                    <td data-aria-label="Actions" className="table__contain__elem--td">
                       <button 
                         className="button-secondary"
                         onClick={() => handleDelete(id)}>Delete</button>

@@ -1,0 +1,15 @@
+
+@use 'colors' as *;
+.container {
+  color: $primary-color;
+}
+
+.head__contain {
+  margin-top: 4rem;
+
+  &__btns {
+    display: flex;
+    justify-content: center;
+    margin: 5rem auto;
+  }
+}

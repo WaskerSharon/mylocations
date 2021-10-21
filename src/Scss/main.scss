@@ -1,3 +1,8 @@
+@use 'mixins';
+@use 'header';
+@use 'table';
+@use 'colors';
+
 /* css reset */
 *,
 *::before,
@@ -62,11 +67,11 @@ html {
 
 body {
   margin: 0;
+  text-align: center;
   font-family:  'Ubuntu', 'Cantarell', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #15a7ff;
 }
 
 code {
@@ -75,7 +80,7 @@ code {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 600;
 }
 

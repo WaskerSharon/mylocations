@@ -1,3 +1,6 @@
+@use 'mixins';
+@use 'header';
+@use 'table';
 /* css reset */
 *,
 *::before,
@@ -63,14 +66,17 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  font-family: 'Ubuntu', 'Cantarell', 'Helvetica Neue',
+ sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #15a7ff;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+ monospace;
 }
 
 h1 {
@@ -85,4 +91,4 @@ h2 {
 p {
   font-size: 2rem;
 }
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=main.css.map */
